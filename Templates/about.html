@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+<center>
+<div id="section-about" class="container py-5">
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-dark text-white text-center py-3">
+            <h3 class="mb-0">About</h3>
+        </div>
+        <div class="card-body p-4">
+            
+            <!-- Project Title -->
+            <h4 class="text-primary mb-3">Recipe Generation from Food Image</h4>
+            <p class="text-muted">
+                This project introduces an <b>Inverse Cooking System</b> that automatically generates a detailed recipe
+                from a single food image. Using advanced deep learning models, the system first predicts ingredients 
+                as unordered sets, capturing their dependencies without enforcing a strict sequence. It then generates 
+                step-by-step cooking instructions by jointly attending to both the food image and the predicted ingredients.
+            </p>
+            
+            <!-- Key Features -->
+            <h5 class="text-secondary mt-4">Key Features</h5>
+            <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item">Predicts ingredients directly from a food image</li>
+                <li class="list-group-item">Generates detailed cooking instructions</li>
+                <li class="list-group-item">Uses a novel deep learning architecture for unordered ingredient prediction</li>
+                <li class="list-group-item">Simultaneous attention to both image and ingredient data</li>
+            </ul>
+            
+            <!-- Vision -->
+            <h5 class="text-secondary mt-4">Vision</h5>
+            <p class="text-muted">
+                Our vision is to bridge the gap between food photography and culinary knowledge,
+                making it possible for anyone to recreate delicious dishes simply by capturing an image.
+            </p>
+            
+        </div>
+    </div>
+</div>
+</center>
+
+{% endblock content %}
